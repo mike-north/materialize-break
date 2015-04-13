@@ -17,10 +17,10 @@ module('Acceptance: BreakImport', {
   }
 });
 
-test('visiting /break-import', function(assert) {
-  visit('/break-import');
+test('visiting /', function(assert) {
+  visit('/');
 
   andThen(function() {
-    assert.equal(currentURL(), '/break-import');
+    assert.equal(currentURL(), '/');
   });
 });
